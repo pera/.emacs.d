@@ -19,6 +19,8 @@
 (setq show-paren-delay 0)
 (show-paren-mode 1)
 (global-hl-line-mode t)
+(mouse-avoidance-mode 'cat-and-mouse)
+(setq mouse-yank-at-point t)
 
 (require 'recentf)
 (recentf-mode 1)
