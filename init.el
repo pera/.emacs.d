@@ -21,6 +21,7 @@
 (global-hl-line-mode t)
 (mouse-avoidance-mode 'cat-and-mouse)
 (setq mouse-yank-at-point t)
+(setq scroll-conservatively 1000)
 
 (require 'recentf)
 (recentf-mode 1)
