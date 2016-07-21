@@ -37,6 +37,7 @@
 (require 'slime)
 (slime-setup '(slime-fancy))
 
+(setq evil-want-C-u-scroll t)
 (require 'evil)
 (evil-mode 1)
 
