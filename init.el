@@ -13,9 +13,9 @@
 
 (setq-default indicate-empty-lines t)
 (setq-default tab-width 4)
-(set-face-attribute 'default nil :font "Source Code Pro-10:weight=regular")
+(set-face-attribute 'default nil :font "Source Code Pro-10:weight=semi-bold")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'inkpot t)
+(load-theme 'subatomic t)
 ;;(set-face-background 'show-paren-match (face-background 'default))
 ;;(set-face-foreground 'show-paren-match "#d44")
 (set-face-attribute 'show-paren-match nil :weight 'bold)
@@ -40,8 +40,8 @@
 
 (require 'package)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-			 ("melpa" . "https://melpa.org/packages/")
-			 ("marmalade" . "https://marmalade-repo.org/packages/")))
+                         ("melpa" . "https://melpa.org/packages/")
+                         ("marmalade" . "https://marmalade-repo.org/packages/")))
 (package-initialize)
 
 (setq ivy-use-virtual-buffers t)
