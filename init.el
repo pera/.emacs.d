@@ -7,6 +7,8 @@
 (setq require-final-newline t)
 (windmove-default-keybindings)
 (setq confirm-kill-emacs 'y-or-n-p)
+(setq backup-directory-alist `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 (global-set-key (kbd "C-x C-g") 'keyboard-quit)
 (global-set-key (kbd "C-c C-g") 'keyboard-quit)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
