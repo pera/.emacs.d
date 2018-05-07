@@ -59,6 +59,8 @@
 (require 'evil)
 (evil-mode 1)
 (define-key key-translation-map (kbd "C-c") (lambda (prompt) (cond ((or (evil-insert-state-p) (evil-replace-state-p) (evil-visual-state-p)) [escape]) (t (kbd "C-c")))))
+(define-key evil-normal-state-map (kbd "gj") 'evil-next-visual-line)
+(define-key evil-normal-state-map (kbd "gk") 'evil-previous-visual-line)
 
 (require 'projectile)
 (projectile-mode)
