@@ -36,6 +36,7 @@
 (setq mouse-wheel-scroll-amount '(2 ((shift) . 1) ((control))))
 (setq mouse-wheel-progressive-speed nil)
 (setq scroll-conservatively 1000)
+(setq select-enable-primary t)
 
 (require 'recentf)
 (recentf-mode 1)
