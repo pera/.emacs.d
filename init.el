@@ -64,9 +64,7 @@
 (define-key evil-normal-state-map (kbd "g j") 'evil-next-visual-line)
 (define-key evil-normal-state-map (kbd "g k") 'evil-previous-visual-line)
 (define-key evil-normal-state-map (kbd "g l") 'ivy-switch-buffer)
-(define-key evil-normal-state-map (kbd "g SPC") (lambda ()
-                                                  (interactive)
-                                                  (switch-to-buffer (other-buffer (current-buffer) 1))))
+(define-key evil-normal-state-map (kbd "g SPC") (lambda () (interactive) (switch-to-buffer (other-buffer (current-buffer) 1))))
 (define-key evil-normal-state-map (kbd "g b") 'next-buffer)
 (define-key evil-normal-state-map (kbd "g B") 'previous-buffer)
 
